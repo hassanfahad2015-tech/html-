@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Semantic Blog Layout - Hassan Hussein</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #fdfdfd;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #4ade80; /* bright green */
+        color: #1f2933;
+        padding: 40px 20px;
+        text-align: center;
+        border-bottom: 4px solid #16a34a;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+        font-style: italic;
+        color: #065f46; /* darker green for contrast */
+    }
+
+    nav {
+        background: #d9f99d; /* light lime */
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    nav a {
+        color: #065f46; /* dark green text */
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #16a34a; /* accent green */
+    }
+
+    main {
+        display: flex;
+        max-width: 1200px;
+        margin: 30px auto;
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+    section {
+        flex: 3;
+    }
+
+    article {
+        background: #fef9f0; /* soft cream */
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    article:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    article h2 {
+        margin-top: 0;
+        color: #1f2933;
+    }
+
+    article time {
+        color: #4b5563;
+        font-size: 0.9em;
+    }
+
+    aside {
+        flex: 1;
+        background: #fef9f0; /* match articles */
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        height: fit-content;
+    }
+
+    aside h3 {
+        margin-top: 0;
+        color: #1f2933;
+    }
+
+    aside ul {
+        padding-left: 20px;
+    }
+
+    footer {
+        background: #4ade80; /* same bright green as header */
+        color: #065f46;
+        text-align: center;
+        padding: 25px 20px;
+        margin-top: 40px;
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
+        border-top: 4px solid #16a34a;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Dev Journal</h1>
+    <p>Created by Hassan Hussein – Modern Web Development Insights</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Tutorials</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <section>
+        <article>
+            <header>
+                <h2>Understanding Semantic HTML</h2>
+                <time datetime="2026-01-20">January 20, 2026</time>
+            </header>
+            <p>Semantic HTML helps create web pages that are accessible, SEO-friendly, and easy to maintain. Learning the right tags is essential for professional development.</p>
+        </article>
+
+        <article>
+            <header>
+                <h2>Flexbox vs Grid</h2>
+                <time datetime="2026-01-18">January 18, 2026</time>
+            </header>
+            <p>Flexbox is perfect for one-dimensional layouts, while Grid shines for two-dimensional page designs. Understanding both unlocks full control over your layouts.</p>
+        </article>
+    </section>
+
+    <aside>
+        <h3>About</h3>
+        <p>This blog explores modern web development techniques, clean coding practices, and design insights.</p>
+
+        <h3>Categories</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2026 Hassan Hussein. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+</body>
+</html>
