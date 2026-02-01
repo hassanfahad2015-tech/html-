@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Elements Showcase - Hassan Hussein</title>
+<style>
+    /* Global Styles */
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: #e0e7ff; /* light periwinkle */
+        color: #1e293b; /* dark slate */
+        line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(90deg, #7c3aed, #6366f1);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-style: italic;
+        color: #dbeafe;
+    }
+
+    /* Main Section */
+    section {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    article {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow-wrap: break-word;
+    }
+
+    article:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+        color: #4f46e5;
+        border-bottom: 2px solid #c7d2fe;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    /* Code / Example display */
+    .code {
+        background: #f3f4f6;
+        color: #111827;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-family: monospace;
+    }
+
+    /* Blockquote */
+    blockquote {
+        background: #ede9fe;
+        border-left: 6px solid #7c3aed;
+        padding: 15px 20px;
+        margin: 15px 0;
+        font-style: italic;
+        border-radius: 8px;
+    }
+
+    q {
+        font-style: italic;
+        color: #4338ca;
+    }
+
+    /* Description List */
+    dl {
+        background: #f0fdf4;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    dt {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #065f46;
+    }
+
+    dd {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background: linear-gradient(90deg, #7c3aed, #6366f1);
+        color: white;
+        text-align: center;
+        padding: 25px 20px;
+        margin-top: 40px;
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
+        box-shadow: 0 -6px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Table for examples */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        border: 1px solid #c7d2fe;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background: #ede9fe;
+        color: #4f46e5;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>HTML Elements Showcase</h1>
+    <p>Curated by Hassan Hussein</p>
+</header>
+
+<section>
+    <!-- Text Formatting Elements -->
+    <article>
+        <h2>Text Formatting Elements</h2>
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;b&gt;</span></td>
+                <td>Bold text</td>
+                <td><b>Bold Text</b></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;strong&gt;</span></td>
+                <td>Strong emphasis (bold)</td>
+                <td><strong>Strong Text</strong></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;i&gt;</span></td>
+                <td>Italic text</td>
+                <td><i>Italic Text</i></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;em&gt;</span></td>
+                <td>Emphasized text (italic)</td>
+                <td><em>Emphasized Text</em></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;u&gt;</span></td>
+                <td>Underlined text</td>
+                <td><u>Underlined Text</u></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;mark&gt;</span></td>
+                <td>Highlighted text</td>
+                <td><mark>Highlighted Text</mark></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;sub&gt;</span></td>
+                <td>Subscript text</td>
+                <td>H<sub>2</sub>O</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;sup&gt;</span></td>
+                <td>Superscript text</td>
+                <td>E = mc<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;code&gt;</span></td>
+                <td>Inline code</td>
+                <td><code>console.log("Hello");</code></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;del&gt;</span></td>
+                <td>Deleted / Strikethrough</td>
+                <td><del>Deleted</del></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;ins&gt;</span></td>
+                <td>Inserted / Underlined</td>
+                <td><ins>Inserted</ins></td>
+            </tr>
+        </table>
+    </article>
+
+    <!-- Character Entities -->
+    <article>
+        <h2>HTML Character Entities</h2>
+        <table>
+            <tr>
+                <th>Entity</th>
+                <th>Symbol</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;lt;</span></td>
+                <td>&lt;</td>
+                <td>5 &lt; 10</td>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;gt;</span></td>
+                <td>&gt;</td>
+                <td>10 &gt; 5</td>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;amp;</span></td>
+                <td>&amp;</td>
+                <td>Tom &amp; Jerry</td>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;quot;</span></td>
+                <td>"</td>
+                <td>&quot;Quote&quot;</td>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;apos;</span></td>
+                <td>'</td>
+                <td>&apos;Single Quote&apos;</td>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;copy;</span></td>
+                <td>©</td>
+                <td>&copy; 2026 Hassan Hussein</td>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;reg;</span></td>
+                <td>®</td>
+                <td>Brand<sup>®</sup></td>
+            </tr>
+            <tr>
+                <td><span class="code">&amp;nbsp;</span></td>
+                <td>(space)</td>
+                <td>Hello&nbsp;&nbsp;World</td>
+            </tr>
+        </table>
+    </article>
+
+    <!-- HTML Comments -->
+    <article>
+        <h2>HTML Comments</h2>
+        <dl>
+            <dt>Single-line comment</dt>
+            <dd><span class="code">&lt;!-- This is a comment --&gt;</span></dd>
+            <dt>Multi-line comment</dt>
+            <dd><span class="code">&lt;!--
+  This is a multi-line comment
+  It will not display in the browser
+--&gt;</span></dd>
+        </dl>
+        <p>Comments are visible only in the source code, not on the page.</p>
+    </article>
+
+    <!-- Description List -->
+    <article>
+        <h2>Description List Example</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language, used to structure web pages.</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets, used to style HTML elements.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Programming language used to make web pages interactive.</dd>
+        </dl>
+    </article>
+
+    <!-- Block Quotes -->
+    <article>
+        <h2>Block Quotes</h2>
+        <blockquote cite="https://www.w3.org/">
+            "The world wide web is the universe of network-accessible information."
+        </blockquote>
+        <p>Inline quote example: She said, <q>Learning HTML is fun!</q></p>
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2026 Hassan Hussein. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
